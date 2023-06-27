@@ -1,0 +1,26 @@
+.footer-content{
+    width: 100%;
+    height: 26.47vh;
+    background-color: #343433;
+    color: white;
+    font-family: 'Space Grotesk',sans-serif;
+    display: grid;
+    grid-template-columns: 35% 20% 20% 20%;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+.footer-logo{
+    margin-left: 5%;
+}
+.footer-item{
+    color: white;
+}
+.footer-item a{
+    text-decoration: none;
+    color: white;
+}
+.footer-item-title{
+    color: #8BEAA4;
+    font-size: 20px;
+}

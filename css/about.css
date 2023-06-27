@@ -1,0 +1,47 @@
+@import url("styles.css");
+
+.about-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #343433;
+    font-family: 'Space Grotesk',sans-serif;
+    font-weight: 600;
+}
+.about-title{
+    color: #3AD463;
+    font-size: 32px;
+}
+.about-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    gap: 2%;
+}
+.about-mapa{
+    overflow: hidden;
+}
+.about-info{
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'Space Grotesk',sans-serif;
+    font-weight: 400;
+}
+.about-terminales{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.about-terminal-title{
+    margin: 0;
+}
+.about-terminal img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+

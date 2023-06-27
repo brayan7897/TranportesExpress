@@ -1,0 +1,189 @@
+@import url('about.css');
+@import url('services.css');
+@import url('rutas.css');
+@import url('envios.css');
+@import url('contact.css');
+@import url('footer.css');
+@import url('header.css');
+
+body{
+    background-color: #FBF9F9;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+:root{
+    --pri-color1: #7BD77F;
+    --pri-color2: #8BEAA4;
+    --pri-color3: #279F42;
+    --color-black: #000000;
+    --color-gris: #333333;
+}
+.home{
+    width: 90.0%;
+    height: 88.26vh;
+    display: flex;
+
+    flex-direction: row;
+    padding: 0 0 0 10%;
+    justify-content: center;
+}
+.present-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4%;
+}
+.present-title{
+    font-family: 'Space Grotesk',sans-serif;
+    font-size: 3rem;
+    color: #000000;
+    margin: 0;
+}
+.present-text{
+    font-family: 'Space Grotesk',sans-serif;
+    font-size: 1.125rem;
+    color: #000000;
+}
+.present-hub{
+    display: grid;
+    
+}
+.present-hub-button{
+    width: 50%;
+    height: 10%;
+    background-color: var(--pri-color1);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.present-hub-button:hover{
+    background-color: var(--pri-color2);
+}
+.present-hub-info{
+    
+    border: 2px solid rgba(51, 51, 51, 0.49);
+    width: 50%;
+    height: 20%;
+    padding: 1% 5%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.present-hub-info h3{
+    font-family: 'Space Grotesk',sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+.present-hub-info p{
+    font-family: 'Space Grotesk',sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+.present-rutas{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.present-rutas-fondo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.present-rutas-fondo img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.present-rutas-img{
+    width: 80%;
+    height: 80%;
+    z-index: 2;
+    margin: 0 10%;
+}
+.present-rutas-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.present-rutas-car{
+    width: 45%;
+    height: 35%;
+    z-index: 3;
+    position: absolute;
+    top: 40%;
+    left: -30%;
+}
+.present-rutas-car img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.present-garants{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.present-garant-separator{
+    width: 1px;
+    height: 32px;
+    margin-left: 10px;
+
+    background-color: #000000;
+}
+.present-garant{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+.present-garant p{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .home{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    .present-content{
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+    }
+    .present-hub-button{
+        width: 50%;
+        height: 10%;
+    }
+    .present-rutas{
+        display: none;
+    }
+    .present-garants{
+        flex-direction: column;
+    }
+}
+@media (max-width: 1366px){
+
+}

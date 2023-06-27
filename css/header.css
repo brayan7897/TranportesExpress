@@ -1,0 +1,130 @@
+
+.header-content{
+    width: 77.32%;
+    height: 11vh;
+    padding: 0 10.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegador ul{
+    list-style: none;
+    display: inline;
+}
+.navegador ul li{
+    display: inline;
+}
+.navegador ul li a{
+    font-family: 'Bw Quinta Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: #656464;
+}
+.navegador ul li:hover{
+    color: #279F42;
+}
+.button-login{
+    color: #279F42;
+}
+.button-registro{
+    background-color: #7BD77F;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+.button-registro:hover{
+    background-color: #7BD77F;
+    color: var(--color-black);
+}
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 768px) {
+    .header-content{
+        width: 100.0%;
+        height: 11vh;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .navegador {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #ffffff;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 100px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+        z-index: 20;
+    }
+    .navegador ul li{
+        line-height: 60px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav-menu_visible {
+        left: 0;
+    }
+    .navegador ul li a:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #83f7a0;
+    }
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+}
+
+@media (max-width: 1366px) {
+
+    .header-content{
+        display: flex;
+        
+    }
+    .navegador ul li a{
+        font-family: 'Bw Quinta Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        text-decoration: none;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        cursor: pointer;
+        color: #656464;
+    }
+    .button-registro{
+        background-color: #7BD77F;
+        padding: 5px 10px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        cursor: pointer;
+    }
+}
