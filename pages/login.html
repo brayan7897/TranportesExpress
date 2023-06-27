@@ -11,17 +11,16 @@
 <body>
     <header class="header-content">
         <img class="logo" src="../img/logo.svg">
-        <nav class="navegador">
-            <ul>
-                <li><a>Inicio</a></li>
-                <li><a>Reservas</a></li>
-                <li><a>Envios</a></li>
-                <li><a>Sobre nosotros</a></li>
-                <li><a>Contactenos</a></li>
-                <li class="button-login"><a href="../pages/login.html" style="text-decoration: none; color: #279F42">Login |</a></li>
-                <li class="button-registro"><a href="../pages/registro.html" style="text-decoration: none; color: #000000">Resgistro</a></li>
+        <button class="nav-toggle"><img src="../img/menu-button.svg" alt=""></button>
+            <ul class="navegador">
+                <li><a class="nav-item" href="../index.html">Inicio</a></li>
+                <li><a class="nav-item" onclick="window.location.href = '../index.html#Rutas';">Reservas</a></li>
+                <li><a class="nav-item" onclick="window.location.href = '../index.html#Envios';">Envios</a></li>
+                <li><a class="nav-item" onclick="window.location.href = '../index.html#About';">Sobre nosotros</a></li>
+                <li><a class="nav-item" onclick="window.location.href = '../index.html#Contact';">Contactenos</a></li>
+                <li class="button-login"><a href="./pages/login.html" style="text-decoration: none; color: #279F42">Login |</a></li>
+                <li class="button-registro"><a href="./pages/registro.html" style="text-decoration: none; color: #000000">Resgistro</a></li>
             </ul>
-        </nav>
     </header>
     <section class="login-content">
         <form class="login">
@@ -70,5 +69,8 @@
             <a href="">express_san_juan@hotmail.com</a>
         </div>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>

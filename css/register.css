@@ -66,3 +66,20 @@ p{
 .register-button:hover{
     background-color: #8BEAA4;
 }
+
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden !important;
+    }
+    .register{
+        width: 80%;
+    }
+}
+@media (max-width: 1024px) and (min-width:768px){
+    body{
+        overflow-x: hidden !important;
+    }
+    .register{
+        width: 50%;
+    }
+}

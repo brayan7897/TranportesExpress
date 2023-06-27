@@ -24,3 +24,17 @@
     color: #8BEAA4;
     font-size: 20px;
 }
+@media (max-width: 768px){
+    .footer-content{
+        width: 100%;
+        height: 32vh;
+        background-color: #343433;
+        color: white;
+    }
+    .footer-item-title{
+        font-size: 16px;
+    }
+    .footer-item a{
+        font-size: 14px;
+    }
+}

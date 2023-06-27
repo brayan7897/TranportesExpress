@@ -14,17 +14,15 @@
     <header class="header-content">
         <img class="logo" src="./img/logo.svg">
         <button class="nav-toggle"><img src="./img/menu-button.svg" alt=""></button>
-        <nav class="navegador">
-            <ul>
-                <li><a class="nav-item" href="#">Inicio</a></li>
-                <li><a class="nav-item" href="#Rutas">Reservas</a></li>
-                <li><a class="nav-item" href="#Envios">Envios</a></li>
-                <li><a class="nav-item" href="#About">Sobre nosotros</a></li>
-                <li><a class="nav-item" href="#Contact">Contactenos</a></li>
+            <ul class="navegador">
+                <li><a class="nav-item" href="./index.html">Inicio</a></li>
+                <li><a class="nav-item" onclick="window.location.href = 'index.html#Rutas';">Reservas</a></li>
+                <li><a class="nav-item" onclick="window.location.href = 'index.html#Envios';">Envios</a></li>
+                <li><a class="nav-item" onclick="window.location.href = 'index.html#About';">Sobre nosotros</a></li>
+                <li><a class="nav-item" onclick="window.location.href = 'index.html#Contact';">Contactenos</a></li>
                 <li class="button-login"><a href="./pages/login.html" style="text-decoration: none; color: #279F42">Login |</a></li>
                 <li class="button-registro"><a href="./pages/registro.html" style="text-decoration: none; color: #000000">Resgistro</a></li>
             </ul>
-        </nav>
     </header>
     <section class="home">
         <div class="present-content">
@@ -35,9 +33,9 @@
                 Tenemos como principal objetivo brindar el mejor<br> 
                 servicio de transporte interprovincial de pasajeros
             </p>
-            <button class="present-hub-button">
+            <a class="present-hub-button" href="#Rutas">
                 Registra tu reserva
-            </button>
+            </a>
             <div class="present-hub-info">
                 <h3>
                     Abrimos Nuestro nuevo local
@@ -291,11 +289,11 @@ Av. Raymondi, Cdra 5 - Lamas, Cdra 1
         <h2 class="about-title">Sobre nosotros</h2>
         <div class="about-container">
             <div class="about-mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15720.310628773841!2d-76.2330195!3d-9.9274906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7c30278c55931%3A0x17d75a1dfcd914b9!2sEmpresa%20de%20Transportes%20EXPRESS%20SAN%20JUAN%20S.R.L!5e0!3m2!1ses-419!2spe!4v1687829911784!5m2!1ses-419!2spe" width="500" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15720.310628773841!2d-76.2330195!3d-9.9274906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7c30278c55931%3A0x17d75a1dfcd914b9!2sEmpresa%20de%20Transportes%20EXPRESS%20SAN%20JUAN%20S.R.L!5e0!3m2!1ses-419!2spe!4v1687829911784!5m2!1ses-419!2spe" width="1000" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="about-info">
                 <p>
-                    Somos una Empresa de logística y transporte que Tiene como principal objetivo brindar el mejor servicio de transporte interprovincial de pasajeros
+                    Somos una Empresa de logística y transporte<br> que Tiene como principal objetivo brindar el<br> mejor servicio de transporte interprovincial de<br> pasajeros
                 </p>
                 <p>
                     Contamos con dos terminales

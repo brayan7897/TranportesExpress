@@ -11,7 +11,6 @@
     font-weight: 600;
     padding-top: 2%;
 }
-
 .envios-button{
     text-align: center;
     width: 100%;
@@ -76,4 +75,33 @@
 .envio-info{
     font-weight: 400;
     font-size: 16px;
+}
+@media (max-width: 768px) {
+    .envios-content{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .envios-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .envio{
+        width: 50%;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 5% 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
 }

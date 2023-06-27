@@ -8,14 +8,15 @@
     justify-content: space-between;
 }
 
-.navegador ul{
-    list-style: none;
+.navegador{
+    display: flex;
+    align-items: center;
+
+}
+.navegador li{
     display: inline;
 }
-.navegador ul li{
-    display: inline;
-}
-.navegador ul li a{
+.navegador li a{
     font-family: 'Bw Quinta Pro';
     font-style: normal;
     font-weight: 700;
@@ -26,7 +27,7 @@
     cursor: pointer;
     color: #656464;
 }
-.navegador ul li:hover{
+.navegador li a:hover{
     color: #279F42;
 }
 .button-login{
@@ -58,11 +59,16 @@
 }
 @media (max-width: 768px) {
     .header-content{
-        width: 100.0%;
+        width: 95.0%;
         height: 11vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2.5%;
     }
     .nav-toggle {
         display: block;
+        z-index: 21;
     }
     .navegador {
         flex-direction: column;
@@ -81,7 +87,7 @@
         transition: left 0.3s;
         z-index: 20;
     }
-    .navegador ul li{
+    .navegador li{
         line-height: 60px;
         display: flex;
         justify-content: center;
@@ -90,7 +96,7 @@
     .nav-menu_visible {
         left: 0;
     }
-    .navegador ul li a:hover,
+    .navegador li a:hover,
     .nav-menu-link_active {
         background: none;
         color: #83f7a0;
@@ -99,32 +105,15 @@
         outline: none;
     }
 }
-
-@media (max-width: 1366px) {
-
+@media (max-width: 1024px){
     .header-content{
-        display: flex;
-        
+        width: 90%;
+        padding: 0 5%;
+        font-size: 10px;
     }
-    .navegador ul li a{
-        font-family: 'Bw Quinta Pro';
-        font-style: normal;
-        font-weight: 700;
+    .navegador{
+        width: 95%;
         font-size: 12px;
-        text-decoration: none;
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-        cursor: pointer;
-        color: #656464;
     }
-    .button-registro{
-        background-color: #7BD77F;
-        padding: 5px 10px;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        cursor: pointer;
-    }
+    
 }

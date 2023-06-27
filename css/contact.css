@@ -52,3 +52,19 @@
 .contac-button:hover{
     background-color: #3AD463;
 }
+@media (max-width: 768px) {
+    .contac-content{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+    .contac-img{
+        display: none;
+    }
+    .contac-info{
+        width: 80%;
+    }
+}

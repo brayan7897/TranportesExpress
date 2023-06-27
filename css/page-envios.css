@@ -197,3 +197,35 @@ p{
 .ruta-cliente-button:hover{
     background-color: #279F42;
 }
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden !important;
+    }
+    .ruta-content{
+        width: 80%;
+        height: calc(2*88vh);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        gap: 0;
+        text-align: center;
+    }
+    .ruta-cliente-datos{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5%;
+    }
+    .ruta-cliente-button{
+        width: 80%;
+    }
+}
+@media (max-width: 1024px) and (min-width:768px){
+    body{
+        overflow-x: hidden !important;
+    }
+}

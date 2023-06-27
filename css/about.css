@@ -22,10 +22,12 @@
     gap: 2%;
 }
 .about-mapa{
+    width: 90%;
+    height: 70%;
     overflow: hidden;
 }
 .about-info{
-    font-size: 25px;
+    font-size: 20px;
     color: #ffffff;
     font-family: 'Space Grotesk',sans-serif;
     font-weight: 400;
@@ -36,7 +38,9 @@
     align-items: center;
 }
 .about-terminal-title{
-    margin: 0;
+    margin-top: 15%;
+    font-size: 25px;
+    color: #8BEAA4;
 }
 .about-terminal img{
     width: 100%;
@@ -44,4 +48,27 @@
     object-fit: fill;
 }
 
-
+@media (max-width: 768px) {
+    .about-content{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 0;
+    }
+    .about-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-mapa{
+        width: 80%;
+        height: 200px;
+    }
+    .about-info{
+        width: 70%;
+        font-size: 16px;
+    }
+}
