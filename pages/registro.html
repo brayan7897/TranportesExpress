@@ -24,20 +24,20 @@
             </ul>
     </header>
     <section class="register-content">
-        <form class="register">
+        <form class="register" id="register-form">
             <div class="register-image">
                 <img src="../img/registrer-image.svg" alt="register">
             </div>
             <p class="register-text" style="color: #545151; font-size: 16px;">Ingrese sus datos</p>
             <div class="register-container">
-                <input class="register-input" type="text" placeholder="Nombres y Apellidos">
-                <input class="register-input" type="number" placeholder="Teléfono">
+                <input class="register-input" id="input_regis_1" type="text" placeholder="Nombres y Apellidos">
+                <input class="register-input" id="input_regis_2" type="number" placeholder="Teléfono">
                 <div style="width: 83%; height: 15%; display: grid; grid-template-columns: 40% 71%; ">
-                    <input class="register-input" type="number" style="height: 100%;" placeholder="Edad">
-                    <input class="register-input" type="text" style="height: 100%;" placeholder="Dirección">
+                    <input class="register-input" id="input_regis_3" type="number" style="height: 100%;" placeholder="Edad">
+                    <input class="register-input" id="input_regis_4" type="text" style="height: 100%;" placeholder="Dirección">
                 </div>
-                <input class="register-input" type="text" placeholder="Correo">
-                <input class="register-input" type="text" placeholder="Contraseña">
+                <input class="register-input" id="input_regis_5" type="text" placeholder="Correo">
+                <input class="register-input" id="input_regis_6" type="text" placeholder="Contraseña">
             </div>
             <button class="register-button" id="registrar" type="button">Registrar</button>
         </form>
@@ -83,5 +83,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/animation.js"></script>
+    <script src="../js/script-register.js"></script>
 </body>
 </html>
