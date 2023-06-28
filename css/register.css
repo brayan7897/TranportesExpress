@@ -12,6 +12,7 @@ p{
     height: 88.26vh;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .register{
     width: 30%;

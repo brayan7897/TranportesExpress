@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/animation.css">
 </head>
 <body>
     <header class="header-content">
@@ -18,8 +19,8 @@
                 <li><a class="nav-item" onclick="window.location.href = '../index.html#Envios';">Envios</a></li>
                 <li><a class="nav-item" onclick="window.location.href = '../index.html#About';">Sobre nosotros</a></li>
                 <li><a class="nav-item" onclick="window.location.href = '../index.html#Contact';">Contactenos</a></li>
-                <li class="button-login"><a href="./pages/login.html" style="text-decoration: none; color: #279F42">Login |</a></li>
-                <li class="button-registro"><a href="./pages/registro.html" style="text-decoration: none; color: #000000">Resgistro</a></li>
+                <li class="button-login"><a href="./login.html" style="text-decoration: none; color: #279F42">Login |</a></li>
+                <li class="button-registro"><a href="./registro.html" style="text-decoration: none; color: #000000">Resgistro</a></li>
             </ul>
     </header>
     <section class="login-content">
@@ -39,7 +40,7 @@
                     </p>
                 </button>
             </div>
-            <button class="login-button" type="button">Login</button>
+            <button class="login-button" id="registrar" type="button">Login</button>
         </form>
     </section>
     <section class="footer-content">
@@ -70,7 +71,18 @@
         </div>
     </section>
 
+    <section class="animation-content" id="animation-content" onclick="window.location.href = '../index.html';">
+        <div  id="wrapper"> 
+            <svg  id="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> 
+                <circle id="checkmark__circle" cx="26" cy="26" r="25" fill="none"/> 
+                <path id="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+        </div>
+        <h3 style="font-size: 20px; color: #000000; margin: 0 1.5%;">Logeo exitoso</h3>
+    </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/animation.js"></script>
 </body>
 </html>
